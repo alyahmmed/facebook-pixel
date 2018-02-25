@@ -10,7 +10,7 @@ Once this operation completes, you must add the service provider. Open `app/conf
 ```php
 'providers' => [
     // ...
-    Alyahmmed\LaravelMailCampaigns\FacebookPixelProvider::class,
+    Alyahmmed\FacebookPixel\FacebookPixelProvider::class,
 ],
 ```
 
@@ -18,6 +18,8 @@ At this point the inliner should be already working with the default options. If
 ```bash
 $ php artisan vendor:publish --provider=Alyahmmed\FacebookPixel\FacebookPixelProvider
 ```
+
+Edit config file `config/facebook.php` with your FB app details.
 
 Add the following to your main route file `routes/web.php` feel free to alter these routes to what suits you best
 ```
